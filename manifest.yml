@@ -2,7 +2,7 @@ applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
   routes:
-  - route: back-benchers.apps.pikes.pal.pivotal.io
+  - route: pal-tracker-chipper-panda.apps.pikes.pal.pivotal.io
 #  random-route: true
   hostname: back-benchers
   env:
