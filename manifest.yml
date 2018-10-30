@@ -6,4 +6,4 @@ applications:
 #  random-route: true
   hostname: back-benchers
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry
+    WELCOME_MESSAGE: Hello from the review environment

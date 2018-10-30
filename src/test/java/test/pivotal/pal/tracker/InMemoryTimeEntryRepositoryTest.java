@@ -11,6 +11,23 @@ import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class InMemoryTimeEntryRepositoryTest {
+
+    @Test
+    public void timeEntryEquals(){
+        TimeEntry tm = new TimeEntry();
+        tm.setId(10);
+        Object obj = tm;
+        assertThat(tm).isEqualTo(obj);
+    }
+
+    @Test
+    public void timeEntryEquals2(){
+        TimeEntry tm = new TimeEntry();
+        tm.setId(10);
+        Object obj = new InMemoryTimeEntryRepository();
+        assertThat(tm).isNotEqualTo(obj);
+    }
+
     @Test
     public void create() throws Exception {
         InMemoryTimeEntryRepository repo = new InMemoryTimeEntryRepository();
