@@ -31,8 +31,10 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
 
     @Override
     public TimeEntry find(long id) {
-        return timeEntryMap.get(id);
-
+        if(timeEntryMap.containsKey(id)){
+            return timeEntryMap.get(id);
+        }
+        return null;
     }
 
     @Override
