@@ -11,7 +11,7 @@ public class PalTrackerInfoContributor implements InfoContributor {
 
     @Override
     public void contribute(Info.Builder builder) {
-        builder.withDetail("build",
+        builder.withDetail("meta",
                 Collections.singletonMap("developers", "back-benchers"));
     }
 
