@@ -6,11 +6,11 @@ public interface TimeEntryRepository {
 
     public List<TimeEntry> list();
 
-    TimeEntry create(TimeEntry timeEntry);
+    public TimeEntry create(TimeEntry timeEntry);
 
-    TimeEntry find(long id);
+    public TimeEntry find(Long id);
 
-    TimeEntry update(long id, TimeEntry timeEntry);
+    public TimeEntry update(Long id, TimeEntry timeEntry);
 
-    void delete(long id);
+    public void delete(Long id);
 }
